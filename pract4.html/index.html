@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Team of Kazakhstan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .img-hover-zoom {
+            transition: transform 0.3s ease;
+        }
+        .first-three:hover {
+            transform: scale(1.1);
+        }
+        body.day-theme {
+            background-color: white;
+            color: black;
+        }
+        body.night-theme {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="day-theme">
+
+<div class="container mt-3 text-end">
+    <button id="themeToggle" class="btn btn-secondary">Switch to Night Theme</button>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">Kazakhstan FC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="members.html">Team members</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="achiv.html">Achievements</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid bg-primary text-white text-center py-5">
+    <h1>Welcome to Kazakhstan FC Official Website</h1>
+    <p>Official website of the national football team of Kazakhstan</p>
+</div>
+
+<section id="about" class="container my-5">
+    <h2 class="text-center">FC Kazakhstan</h2>
+    <p>Kazakhstan's national football team represents the pride of the nation. We participate in international tournaments, striving to achieve the highest results on the world stage. Our team consists of the best players, always ready to fight for victory in every match.</p>
+    <br>
+    <div class="row text-center" id="team-info">
+        <!-- Данные будут динамически добавлены сюда -->
+    </div>
+</section>
+
+
+<section class="container">
+    <button id="readMore" class="btn btn-primary">Read More</button>
+    <div id="extraContent" style="display: none;">
+        <p>Сборная Казахстана по футболу — национальная команда, представляющая Казахстан на международных турнирах. Основана в 1992 году после распада СССР. С 2002 года выступает под эгидой УЕФА, до этого входила в АФК (Азиатская футбольная конфедерация). Команда участвует в квалификациях чемпионатов мира и Европы, а также в Лиге наций УЕФА, где показала хорошие результаты, в частности выиграла группу Лиги C в 2022 году, поднявшись в Лигу B. Ведущие игроки выступают в местных клубах и зарубежных лигах.</p>
+    </div>
+</section>
+
+<section id="news" class="container my-5">
+    <h2 class="text-center">Latest Football News</h2>
+    <div id="news-container" class="row">
+        <!-- Новости будут динамически добавлены сюда -->
+    </div>
+</section>
+
+
+<section id="contact" class="container my-5">
+    <h2 class="text-center">Contact Information</h2>
+    <form id="contactForm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    <div id="successMessage" style="display:none; color:green;">Form submitted successfully!</div>
+</section>
+
+<button id="play-sound-btn" class="btn btn-secondary">Play Sound</button>
+
+<footer id="footer" class="bg-dark text-white text-center py-3">
+    <p>© 2024 Kazakhstan FC. All rights reserved.</p>
+    <p>Team Members: Makhambetuly Dairkhan</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
